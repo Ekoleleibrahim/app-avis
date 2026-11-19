@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #001d3d;
+    --bg-color: #0d0d0d;
+    --secondary-color: #fff;
+    --gray-leger: #adb5bd;
+    --blue-leger: #073b4c;
+    --bg-btn: #fb8500;
+}
+
+body{
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: var(--bg-color);
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.wrapper,
+.wrapper-notification {
+    max-width: 420px;
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.star{
+    display: inline-block;
+    padding: 8px;
+    background-color: var(--blue-leger);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+svg {
+    width: 20px;
+    color: var(--bg-btn);
+}
+
+h1 {
+    color: var(--secondary-color);
+    margin-block: 20px;
+}
+
+p, .btn{
+    color: var(--gray-leger);
+    line-height: 1.7;
+}
+
+.container-btns {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-block: 30px;
+}
+
+.btn {
+    background-color: var(--blue-leger);
+    padding: 10px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 200ms;
+}
+
+.btn:hover{
+    background-color: var(--bg-btn);
+    color: var(--bg-color);
+}
+
+button{
+    width: 100%;
+    padding: 15px;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    background-color: var(--bg-btn);
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+button:hover{
+    background-color: var(--secondary-color);
+}
+
+.wrapper-notification{
+    text-align: center;
+    display: none;
+}
+
+h2{
+    color: var(--secondary-color);
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.wrapper-notification img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
